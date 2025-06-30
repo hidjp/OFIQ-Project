@@ -152,6 +152,7 @@ add_definitions(-DOFIQ_EXPORTS)
 set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 
 include(${CMAKE_CURRENT_SOURCE_DIR}/cmake/SourceDefinition.cmake)
+	${OFIQLIB_SOURCE_DIR}/modules/utils/src/data_source.cpp
 
 if(USE_CONAN)
 	list(APPEND OFIQ_LINK_LIB_LIST 

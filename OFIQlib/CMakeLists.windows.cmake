@@ -143,6 +143,8 @@ endif(USE_CONAN)
 add_definitions(-DOFIQ_EXPORTS)
 
 include(${CMAKE_CURRENT_SOURCE_DIR}/cmake/SourceDefinition.cmake)
+	${OFIQLIB_SOURCE_DIR}/modules/utils/src/data_source.cpp
+	${OFIQLIB_SOURCE_DIR}/modules/utils/data_source.h
 
 if(USE_CONAN)
 	list(APPEND OFIQ_LINK_LIB_LIST 
